@@ -76,8 +76,11 @@
     emailInput.placeholder = 'example@email.com';
     submitBtn.textContent = t.submit;
     document.getElementById('privacy-note').textContent = t.privacy;
-    document.getElementById('footer-text').innerHTML =
-      `${escapeHtml(t.footer)} <a href="https://xposedornot.com" target="_blank" rel="noopener noreferrer">XposedOrNot</a> ${escapeHtml(t.footerService)}`;
+    const footerTextEl = document.getElementById('footer-text');
+    if (footerTextEl) {
+      footerTextEl.innerHTML =
+        `${escapeHtml(t.footer)} <a href="https://xposedornot.com" target="_blank" rel="noopener noreferrer">XposedOrNot</a> ${escapeHtml(t.footerService)}`;
+    }
 
     langToggleBtn.textContent = lang === 'ar' ? 'EN' : 'AR';
     langToggleBtn.setAttribute('aria-label', t.toggleLabel);
