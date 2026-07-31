@@ -1,0 +1,17 @@
+{
+  "name": "email-breach-checker",
+  "version": "1.0.0",
+  "description": "أداة لفحص تسرب الإيميل في اختراقات بيانات سابقة",
+  "private": true,
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>حصن | فحص تسرب الإيميل</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <div class="topbar">
+      <button type="button" id="lang-toggle" class="lang-toggle">EN</button>
+    </div>
+
+    <header class="hero">
+      <div class="shield">🛡️</div>
+      <h1 id="brand-title" class="brand">حصن</h1>
+      <p class="tagline" id="tagline">هل تسرّب إيميلك؟</p>
+      <p class="sub" id="sub-desc">تحقق إذا كان بريدك الإلكتروني ظهر في اختراقات بيانات سابقة، واحصل على خطوات فورية لتأمين حساباتك.</p>
+    </header>
+
+    <form id="check-form" class="check-card" autocomplete="off" novalidate>
+      <label for="email" class="visually-hidden" id="email-label">بريدك الإلكتروني</label>
+      <div class="input-row">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@email.com"
+          required
+          maxlength="254"
+        />
+        <button type="submit" id="submit-btn">افحص الآن</button>
+      </div>
+      <p class="privacy-note" id="privacy-note">🔒 لا نقوم بتخزين بريدك الإلكتروني على خوادمنا — يُستخدم فقط لحظة الفحص ثم يُهمل.</p>
+    </form>
+
+    <section id="result" class="result" hidden aria-live="polite"></section>
+
+    <footer class="footer">
+      <p id="footer-text">بيانات الفحص من خدمة <a href="https://xposedornot.com" target="_blank" rel="noopener noreferrer">XposedOrNot</a> المجانية.</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
