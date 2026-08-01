@@ -347,6 +347,12 @@ html[dir="ltr"] #email {
   color: var(--accent);
 }
 
+.credits {
+  margin-top: 6px;
+  font-size: 11px;
+  opacity: 0.45;
+}
+
 @media (max-width: 480px) {
   .input-row {
     flex-direction: column;
