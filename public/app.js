@@ -27,6 +27,7 @@
       safeDesc: 'لم نجد هذا الإيميل في قواعد بيانات الاختراقات المعروفة لدينا. هذا لا يعني أمانك المطلق — استمر بالممارسات الآمنة أدناه.',
       scoreLevels: { strong: 'قوي', medium: 'متوسط', weak: 'ضعيف' },
       toggleLabel: 'Switch to English',
+      credits: 'تم تطوير الموقع بواسطة: عبدالرحمن بن عمر مصطفى · أصيل بن عبدالرحمن عسيلي',
     },
     en: {
       brand: 'Hisn',
@@ -49,6 +50,7 @@
       safeDesc: 'We did not find this email in our known breach databases. This does not guarantee absolute safety — keep following safe practices below.',
       scoreLevels: { strong: 'Strong', medium: 'Medium', weak: 'Weak' },
       toggleLabel: 'التبديل إلى العربية',
+      credits: 'Developed by: Abdulrahman bin Omar Mustafa · Aseel bin Abdulrahman Asali',
     },
   };
 
@@ -81,6 +83,8 @@
       footerTextEl.innerHTML =
         `${escapeHtml(t.footer)} <a href="https://xposedornot.com" target="_blank" rel="noopener noreferrer">XposedOrNot</a> ${escapeHtml(t.footerService)}`;
     }
+    const creditsEl = document.getElementById('credits-text');
+    if (creditsEl) creditsEl.textContent = t.credits;
 
     langToggleBtn.textContent = lang === 'ar' ? 'EN' : 'AR';
     langToggleBtn.setAttribute('aria-label', t.toggleLabel);
