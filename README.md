@@ -40,4 +40,4 @@ Live Demo:
 https://hisn-email-breach-checker.onrender.com/
 
 GitHub:
-https://github.com/it.Abdulrahman/hisn-email-breach-checker
+https://github.com/it-Abdulrahman/hisn-email-breach-checker
